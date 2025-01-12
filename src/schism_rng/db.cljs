@@ -13,8 +13,8 @@
                    [a :new])
                  (sort new))))]
     {:gods gods
-     :state (mapv (fn [[a _]] [false (= a "Dziva")]) gods)
+     :state (mapv (fn [[a _]] [false (some #{a} ["Dziva" "Ajaka" "Ala" "Alajire" "Igwekala" "Orisha Aje"])]) gods)
      :god-count "8"
-     :min-old "4"
-     :min-new "4"
+     :min-old "0"
+     :min-new "0"
      :result []}))
